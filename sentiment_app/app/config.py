@@ -1,0 +1,1 @@
+#Projenin ayarlarını tutar.
