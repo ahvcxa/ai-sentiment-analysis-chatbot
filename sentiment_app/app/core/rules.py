@@ -1,0 +1,1 @@
+#Negation, intensifier gibi kuralları uygular (örn: “çok iyi”, “iyi değil”) 

@@ -1,0 +1,15 @@
+# Web framework
+flask
+
+# Data processing
+pandas
+numpy
+
+# NLP utilities
+nltk
+
+# Machine learning metrics (evaluation)
+scikit-learn
+
+# Testing
+pytest

@@ -1,0 +1,1 @@
+#Kelime skorlarına bakarak metni pozitif / negatif / nötr olarak sınıflandırır
