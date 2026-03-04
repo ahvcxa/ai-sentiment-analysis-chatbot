@@ -1,0 +1,1 @@
+#Kullanıcıdan gelen metni temizler (küçük harfe çevirme, noktalama kaldırma, tokenization vb.) 

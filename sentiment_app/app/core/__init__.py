@@ -1,0 +1,1 @@
+#Python’un bu klasörü modül olarak tanımasını sağlar

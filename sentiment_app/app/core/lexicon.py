@@ -1,0 +1,1 @@
+#Pozitif ve negatif kelime sözlüğünü yükler
