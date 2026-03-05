@@ -1,3 +1,4 @@
+from matplotlib import text
 import pandas as pd
 import re
 from collections import Counter
@@ -31,12 +32,25 @@ def clean_text(text):
 
     tokens = text.split()
     tokens = [w for w in tokens if w not in STOPWORDS]
+    tokens = [strip_suffix(w) for w in tokens]
 
     if GENERATE_BIGRAMS and len(tokens) >= 2:
         bigrams = [f"{tokens[i]}_{tokens[i+1]}" for i in range(len(tokens) - 1)]
         return tokens + bigrams
 
     return tokens
+
+def strip_suffix(word):
+    suffixes = ["ydi","ydı","ydü","ydu","di","dı","dü","du","ti","tı","tu","tü"]
+    for s in suffixes:
+        if word.endswith(s) and len(word) > len(s) + 2:
+            return word[:-len(s)]
+    return word
+
+def preprocess_text(text: str):
+    """Classifier'ın kullanacağı: text -> token list"""
+    return clean_text(text)
+
 
 
 
@@ -83,6 +97,9 @@ def main():
     print("\n--- Örnek (ilk 5 satır) ---")
     print(df[["Sentence", "Cleaned_Sentence"]].head())
 
+
+
+    
     # Kaydetme
     df["Final_Cleaned_Text"] = df["Cleaned_Sentence"].apply(lambda x: " ".join(x))
     output_path = os.path.join(base_dir, "../../data/processed/cleaned_food_reviews.csv")
@@ -90,16 +107,9 @@ def main():
 
     print(f"\n✅ Temizlenmiş veri kaydedildi: {output_path}")
 
-def preprocess_text(text: str):
-    """Classifier'ın kullanacağı: text -> token list"""
-    return clean_text(text)
 
-def strip_suffix(word):
-    suffixes = ["ydi","ydı","ydü","ydu","di","dı","dü","du","ti","tı","tu","tü"]
-    for s in suffixes:
-        if word.endswith(s) and len(word) > len(s) + 2:
-            return word[:-len(s)]
-    return word
 
 if __name__ == "__main__":
     main()
+
+
