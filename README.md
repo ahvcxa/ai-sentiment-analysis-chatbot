@@ -13,7 +13,7 @@ Kullanıcı yorumlarını pozitif, negatif veya nötr olarak sınıflandıran Py
 
 ---
 
-### :groups: Ekip ve Sorumluluklar
+### 🫂 Ekip ve Sorumluluklar
 
 #### **Eren** — *NLP & Preprocessing Sorumlusu*
 - **Görevler:** Küçük harfe çevirme, noktalama temizleme, stopword çıkarma (Türkçe), Tokenization.
@@ -44,11 +44,11 @@ Kullanıcı yorumlarını pozitif, negatif veya nötr olarak sınıflandıran Py
 
 ### :clipboard: Görevler & Tahmini Süreler
 
-1. **Metin Ön İşleme** (:stopwatch: ~6h)
-2. **Duygu Sözlüğü** (:stopwatch: ~6h)
-3. **Sınıflandırma Mantığı** (:stopwatch: ~8h)
-4. **Test & Değerlendirme** (:stopwatch: ~4h)
-5. **Kullanıcı Girdi Arayüzü** (:stopwatch: ~12h)
+1. **Metin Ön İşleme** (⏱️ ~6h)
+2. **Duygu Sözlüğü** (⏱️ ~6h)
+3. **Sınıflandırma Mantığı** (⏱️ ~8h)
+4. **Test & Değerlendirme** (⏱️ ~4h)
+5. **Kullanıcı Girdi Arayüzü** (⏱️ ~12h)
 
 ---
 
